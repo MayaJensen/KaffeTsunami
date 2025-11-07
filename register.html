@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,15 +37,208 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>INDBERETNING AF SKADER</h2>
+          <p>Her kan du anmelde skader i forbindelse med kaffetsunamien.</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset>
+            <h2 class="overskrift1">Informationer</h2>
+            <section class="big-form-group">
+              <div class="form-group">
+                <span class="first_output">For- og efternavn</span>
+                <input
+                  type="text"
+                  name="navn"
+                  placeholder="Indtast navn"
+                  required
+                />
+
+                <label> CPR-nummer </label>
+                <input
+                  type="text"
+                  name="cpr"
+                  placeholder="Indtast cpr"
+                  minlength="10"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label> Mobil nummer </label>
+                <input
+                  type="tel"
+                  name="telefon"
+                  placeholder="Indtast nummer"
+                  required
+                />
+
+                <label>E-mailadresse </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Indtast email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label> Adresse </label>
+                <input
+                  type="text"
+                  name="adresse"
+                  placeholder="Indtast vej og nr."
+                  required
+                />
+
+                <label> Postnummer </label>
+                <input
+                  type="text"
+                  name="postnummer"
+                  placeholder="Indtast postnummer"
+                  required
+                />
+
+                <label> By </label>
+                <input
+                  type="text"
+                  name="by"
+                  placeholder="Indtast by"
+                  required
+                />
+              </div>
+            </section>
+          </fieldset>
+
+          <!-- Vurder skade -->
+
+          <fieldset class="skadevurdering">
+            <h3 class="overskrift1">Vurder skade</h3>
+            <p id="skade-info" class="skade-info"></p>
+
+            <label for="mindreskade">
+              <input
+                type="radio"
+                id="mindreskade"
+                name="skade"
+                value="Mindre skade"
+              />
+              Mindre skade
+
+              <span class="tooltip-wrapper">
+                <button
+                  type="button"
+                  class="info-btn"
+                  data-info="Let påvirkning fra kaffebølgen. Der kan opstå mindre skader på
+            overflader, kortvarig lugtgener og begrænset indtrængning af kaffe i
+            området. Huset er stadig beboeligt, og rengøring kan udføres uden
+            professionel hjælp."
+                >
+                  ?
+                </button>
+                <span class="tooltip"></span>
+              </span>
+            </label>
+
+            <label for="middelskade">
+              <input
+                type="radio"
+                id="middelskade"
+                name="skade"
+                value="Middel skade"
+              />
+              Middel skade
+
+              <span class="tooltip-wrapper">
+                <button
+                  type="button"
+                  class="info-btn"
+                  data-info="Moderate skader forårsaget af kaffetsunamien. Der kan være
+            gennemblødte overflader, begyndende skimmeldannelse, midlertidig
+            ubrugelighed af enkelte rum og behov for professionel rengøring og
+            affugtning."
+                >
+                  ?
+                </button>
+                <span class="tooltip"></span>
+              </span>
+            </label>
+
+            <label for="størreskade">
+              <input
+                type="radio"
+                id="størreskade"
+                name="skade"
+                value="Større skade"
+              />
+              Større skade
+
+              <span class="tooltip-wrapper">
+                <button
+                  type="button"
+                  class="info-btn"
+                  data-info="Omfattende ødelæggelser som følge af kaffetsunamien. Bygningen kan
+            være kraftigt gennemvædet, strukturelt påvirket og ubeboelig i en
+            periode. Kræver indsats fra specialister og mulig genopbygning."
+                >
+                  ?
+                </button>
+                <span class="tooltip"></span>
+              </span>
+            </label>
+          </fieldset>
+
+          <!-- Beskrivelse -->
+
+          <label class="skadebeskrivelse">
+            Beskriv din skade
+            <textarea name="beskrivelse" placeholder="Skriv her..."></textarea>
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+          <div>
+            <h3>Navn</h3>
+            <p id="sumName"></p>
+          </div>
+          <div>
+            <h3>CPR-nummer</h3>
+            <p id="sumCPR"></p>
+          </div>
+          <div>
+            <h3>Mobil nummer</h3>
+            <p id="sumMobil"></p>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p id="sumEmail"></p>
+          </div>
+          <div>
+            <h3>Adresse</h3>
+            <p id="sumAdresse"></p>
+          </div>
+          <div>
+            <h3>Postnummer</h3>
+            <p id="sumPost"></p>
+          </div>
+          <div>
+            <h3>By</h3>
+            <p id="sumBy"></p>
+          </div>
+          <div>
+            <h3>Vurdering</h3>
+            <p id="sumV"></p>
+          </div>
+          <div>
+            <h3>Beskrivelse</h3>
+            <p id="sumB"></p>
+          </div>
+
+          <button id="reset_btn" type="reset" class="indsend">
+            Godkend og luk
+          </button>
+          <p class="placeholder"></p>
         </article>
       </section>
     </main>
@@ -76,6 +269,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/forms.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
