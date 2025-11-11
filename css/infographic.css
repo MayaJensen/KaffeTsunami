@@ -32,9 +32,11 @@
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
+  color: #eee8e3;
 }
+
 .info-box {
-  padding: 1.5rem 1rem 0.5rem 1rem;
+  padding: 1.5rem 0.4rem 0.5rem 0.4rem;
   background-color: var(--color-infobox-1-bg);
 }
 .info-box:nth-of-type(2n) {
@@ -58,4 +60,30 @@
 .my_scale3 {
   visibility: hidden;
   transition: transform 2s;
+}
+
+.info1,
+.info2,
+.info3,
+.infoT1,
+.infoT2,
+.infoT3,
+#efficiency,
+#requirement {
+  font-size: 0.9rem !important;
+  line-height: 1.8rem !important;
+}
+
+#forberedelse,
+#evuekation,
+#efterfølgerne {
+  padding: 0.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background: #a42419;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #fff9e2;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
