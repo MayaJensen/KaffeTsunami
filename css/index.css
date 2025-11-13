@@ -1,0 +1,16 @@
+/* POPOVER */
+article[popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+[popover] {
+  padding: 20px;
+  max-width: 600px;
+  max-height: 1000px;
+  margin: 30px auto;
+}
+
+summary::marker {
+  content: none;
+}

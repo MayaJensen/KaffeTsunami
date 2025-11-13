@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -18,7 +19,8 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <img src="SVG/logo.svg" alt="logo" class="logo" />
+          <a href="index.html">KAFNAMI</a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -33,56 +35,241 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="img/warning.png" alt="ICON" class="icon" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>ADVARSEL! Kaffetsunami på vej</h1>
+          <p class="sub">
+            Kaffetsunamier hærger udlandet - Danmark forbereder sig
+          </p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/verdenskort.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Kaffetsunami nærmer sig Danmark</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              De første bølger af skoldhed kaffe er nu set i Nordsøen.
+              Myndighederne advarer mod ophold ved kysterne og beder borgerne
+              holde sig inden døre.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary class="cta_btn">Se mere</summary>
+
+              <div>
+                <p>
+                  Efter flere ugers observationer i Atlanterhavet bekræfter
+                  internationale meteorologer nu, at en massiv kaffebølge
+                  bevæger sig mod de danske farvande. Ifølge eksperter består
+                  tsunamien af koncentreret, mørkristet kaffe, som allerede har
+                  oversvømmet kystområder i Storbritannien og Holland.
+                  Myndighederne råder alle borgere til at:
+                </p>
+                <ul>
+                  <li>Undgå kystområder i de kommende 48 timer</li>
+                  <li>
+                    Sikre husholdningsapparater og kaffemaskiner mod
+                    oversvømmelse
+                  </li>
+                  <li>
+                    Holde sig opdateret via de officielle kanaler på
+                    <strong>kaffetsunami.dk</strong>
+                  </li>
+                </ul>
+                <p>
+                  “Det dufter intenst, men situationen er alvorlig,” udtaler
+                  Beredskabsstyrelsen.
+                </p>
+              </div>
+            </details>
+            <!-- <a popovertarget="popup" href="" class="cta_btn">Se mere</a> -->
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/oversvømmetby.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Forskerne advarer: Danmark kan blive ramt i morgen</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Nye målinger viser, at trykket under Nordsøen stiger hurtigt.
+              Eksperter frygter, at Danmark kan opleve de første tegn på en
+              kaffetsunami allerede i morgen tidlig.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary class="cta_btn">Se mere</summary>
+
+              <div>
+                <p>
+                  Nye satellitdata viser, at trykket under Nordsøen har nået et
+                  kritisk niveau. Den varme, skummende masse bevæger sig mod de
+                  jyske kyster med hastigheder på op til 60 km/t. Forskere fra
+                  Aarhus Universitet følger udviklingen minut for minut og
+                  advarer om, at Danmark kan blive ramt allerede i løbet af
+                  natten.
+                </p>
+                <ul>
+                  <li>Evakueringer forberedes i Esbjerg og Hvide Sande</li>
+                  <li>Kaffecontainere flyttes til højere terræn</li>
+                  <li>
+                    Frivillige opfordres til at hjælpe med opsætning af
+                    “kaffedæmninger”
+                  </li>
+                </ul>
+                <p>
+                  “Vi står over for et historisk øjeblik – Danmark må forberede
+                  sig,” lyder det fra forskerholdet.
+                </p>
+              </div>
+            </details>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Kaffetsunami rammer Europas kyster</h3>
+          <p>
+            En enorm bølge af kaffe har ramt Sydeuropa tidligt i morges. Gaderne
+            flyder med varm espresso, og myndighederne opfordrer folk til at
+            søge højere terræn.
+          </p>
+          <img src="img/kysten.png" alt="news_img" />
+
+          <button popovertarget="pop01" class="cta_btn">Læs mere</button>
+          <div popover id="pop01">
+            <h3>Kaffetsunami rammer Europas kyster</h3>
+            <p>
+              De første meldinger om den enorme kaffetsunami kom tidligt i
+              morges fra Sydeuropa, hvor bølger af skoldhed kaffe ramte flere
+              havnebyer næsten samtidig. I Italien beskriver øjenvidner, hvordan
+              espressofarvede bølger skyllede gennem gaderne i Napoli og fyldte
+              de små sidegader med dampende ristretto. Flere caféer blev
+              bogstaveligt talt opslugt af deres eget produkt.
+            </p>
+
+            <ul>
+              <li>Temperatur på bølgerne: op mod 68°C</li>
+              <li>Højde: op til 3,2 meter</li>
+              <li>Hastighed: 45 km/t mod nord</li>
+            </ul>
+
+            <p>
+              I Spanien har myndighederne erklæret undtagelsestilstand i de mest
+              ramte områder, og i Grækenland arbejder redningsfolk døgnet rundt.
+              Eksperter kalder fænomenet “uden fortilfælde” og mener, at kaffen
+              stammer fra et underjordisk tryk i de sydlige havområder, hvor
+              enorme bønnereserver menes at være eksploderet.
+            </p>
+
+            <blockquote>
+              “Vi har aldrig oplevet noget lignende – det er som at kæmpe mod en
+              levende drik,” siger en redningsarbejder fra Sicilien.
+            </blockquote>
+
+            <p>
+              Satellitbilleder viser nu, at kaffemasserne fortsætter nordpå, og
+              flere lande i EU forbereder sig på næste bølge. Der tales om, at
+              Den Europæiske Kaffekommission vil indføre rationering af
+              mælkepulver og sukker for at undgå panik. Ifølge meteorologer kan
+              duften af kaffe mærkes helt op i Alperne.
+            </p>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Transport lammet af kaffe</h3>
+          <p>
+            Togtrafikken i Tyskland er sat ud af drift, efter at sporene er
+            dækket af tyktflydende kaffe. Lokale rapporterer, at hele stationer
+            nu er nedsunket i en duft af ristede bønner.
+          </p>
+          <img src="img/tog.png" alt="news_img" />
+          <button popovertarget="pop02" class="cta_btn">Læs mere</button>
+          <div popover id="pop02">
+            <h3>Transport lammet af kaffe</h3>
+            <p>
+              Kaffetsunamien har nu ramt det centrale Europa og lammet næsten al
+              transport. Motorveje i Tyskland, Østrig og Schweiz ligger dækket
+              af et tykt lag brun væske, som gør al kørsel farlig. Togtrafikken
+              er gået helt i stå, da jernbanesporene er druknet i stærk kaffe og
+              flere elnet er kortsluttet.
+            </p>
+
+            <ul>
+              <li>2500 km motorvej midlertidigt lukket</li>
+              <li>Over 400 flyafgange aflyst</li>
+              <li>Temperaturen i kaffen overstiger 70 grader</li>
+            </ul>
+
+            <p>
+              Lufthavne melder om passagerer, der sover på gulve omgivet af
+              duften af nymalet kaffe. I Paris pumper metroarbejdere uafbrudt,
+              men væsken vender konstant tilbage. I Schweiz er tunneler fyldt
+              med damp, og synligheden er næsten nul. Flere borgere forsøger at
+              tappe kaffe i flasker “for ikke at lade det gå til spilde”.
+            </p>
+
+            <blockquote>
+              “Det lugter fantastisk – men det er et mareridt,” fortæller en
+              chauffør, der har siddet fast i 9 timer i en sø af cappuccino.
+            </blockquote>
+
+            <p>
+              Eksperter advarer om, at koffeinniveauet i luften nu er så højt,
+              at folk oplever hjertebanken og søvnløshed blot ved at indånde
+              dampene. Flere europæiske regeringer overvejer nu at udstede
+              advarsler for “overstimulation”.
+            </p>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Danmark forbereder sig på kaffetsunami</h3>
+          <p>
+            Efter meldinger om stigende kaffebølger i Nordsøen, forbereder
+            Danmark sig nu på en potentiel landgang inden for få dage.
+            Redningsberedskabet er sat i højeste alarmberedskab.
+          </p>
+          <img src="img/nordsøen.png" alt="news_img" />
+          <button popovertarget="pop03" class="cta_btn">Læs mere</button>
+          <div popover id="pop03">
+            <h3>Danmark forbereder sig på kaffetsunami</h3>
+            <p>
+              De danske myndigheder arbejder nu i døgndrift for at forberede sig
+              på den første bølge af kaffe, der forventes at ramme inden for 48
+              timer. Beredskabsstyrelsen har sendt advarsler ud til hele
+              Vestkysten, og lokale beboere i Esbjerg og Hvide Sande er begyndt
+              at bygge midlertidige diger af sukker og filterposer.
+            </p>
+
+            <ul>
+              <li>Forventet ankomst: inden for 48 timer</li>
+              <li>Potentiel bølgehøjde: 2,5 meter</li>
+              <li>Temperatur: 60–70°C</li>
+            </ul>
+
+            <p>
+              Flere caféer i København har allerede udsolgt af mælk, flødeskum
+              og croissanter, og situationen begynder at påvirke
+              forsyningskæden. “Vi har aldrig haft så mange bestillinger på låg
+              og sugerør,” fortæller en talsmand fra Dansk Kaffeforening.
+              Myndighederne overvejer at bruge landets store kaffelagre i Aarhus
+              Havn som buffer – men advarer samtidig om, at yderligere tryk i
+              området kan forværre situationen.
+            </p>
+
+            <blockquote>
+              “Vi står sammen som et land – og vi holder os vågne,” udtalte
+              statsministeren i en pressebriefing tirsdag morgen.
+            </blockquote>
+
+            <p>
+              Forskerne på Københavns Universitet arbejder på at beregne, hvor
+              meget koffein Danmark potentielt kan blive dækket af. Ifølge
+              tidlige estimater kan selv et lag på få centimeter holde danskerne
+              vågne i ugevis. Indbyggerne opfordres til at holde sig fra
+              kystområderne, men forblive rolige. Duften af kaffe kan allerede
+              mærkes i vinden over Vestjylland.
+            </p>
+          </div>
         </article>
       </section>
     </main>
